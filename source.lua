@@ -1,8 +1,5 @@
-local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
-
-local LocalPlayer = Players.LocalPlayer
 
 local Library = {}
 
@@ -68,8 +65,8 @@ end
 
 local function Corner(parent, radius)
 	local corner = Instance.new("UICorner")
+    corner.Parent = parent
 	corner.CornerRadius = UDim.new(0, radius or 8)
-	corner.Parent = parent
 	return corner
 end
 
@@ -126,13 +123,13 @@ function Library.CreateLib(title, themeName)
 	--==================================================
 
 	local ScreenGui = Create("ScreenGui", {
-		Name = "NexusLibrary",
+		Name = "Zinux",
 		ResetOnSpawn = false,
 		ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	})
 
 	-- Prevent duplicates
-	local old = game:GetService("CoreGui"):FindFirstChild("NexusLibrary")
+	local old = game:GetService("CoreGui"):FindFirstChild("Zinux")
 
 	if old then
 		old:Destroy()
@@ -185,7 +182,7 @@ function Library.CreateLib(title, themeName)
 		Name = "Title",
 		Parent = Topbar,
 
-		Position = UDim2.fromOffset(18, 8),
+		Position = UDim2.fromOffset(1, 0),
 		Size = UDim2.fromOffset(400, 23),
 
 		BackgroundTransparency = 1,
