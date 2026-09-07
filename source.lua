@@ -5,7 +5,7 @@ local Library = {}
 
 local Themes = {
 	DarkTheme = {
-		Background = Color3.fromRGB(24, 25, 32),
+		Background = Color3.fromRGB(20, 21, 27),
 		Sidebar = Color3.fromRGB(20, 21, 27),
 		Topbar = Color3.fromRGB(25, 26, 33),
 
@@ -309,11 +309,9 @@ function Library.CreateLib(title, themeName)
 		Position = UDim2.fromOffset(0, 45),
 		Size = UDim2.new(0, 140, 1, -45),
 
-		BackgroundColor3 = Theme.Sidebar,
+		BackgroundColor3 = Theme.Background,
 		BorderSizePixel = 0
 	})
-
-    Stroke(TabButton, Theme.Border)
 
 	Window.Sidebar = Sidebar
 
