@@ -181,6 +181,23 @@ function Library.CreateLib(title, themeName)
 		BorderSizePixel = 0
 	})
 
+	local TitleLabel = Create("TextLabel", {
+		Name = "Title",
+		Parent = Topbar,
+
+		Position = UDim2.fromOffset(18, 8),
+		Size = UDim2.fromOffset(400, 23),
+
+		BackgroundTransparency = 1,
+
+		Text = title,
+		TextColor3 = Theme.Text,
+		TextSize = 14,
+		Font = Enum.Font.GothamBold,
+
+		TextXAlignment = Enum.TextXAlignment.Left
+	})
+    
 	-- Close
 	local Close = Create("TextButton", {
 		Parent = Topbar,
