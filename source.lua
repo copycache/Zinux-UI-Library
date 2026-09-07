@@ -373,7 +373,7 @@ function Library.CreateLib(title, themeName)
 			Name = tabName,
 			Parent = TabList,
 
-			Size = UDim2.new(1, 0, 0, 38),
+			Size = UDim2.new(1, 0, 0, 28),
 
 			BackgroundColor3 = Theme.Accent,
 			BackgroundTransparency = 1,
