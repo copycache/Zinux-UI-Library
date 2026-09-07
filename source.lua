@@ -307,7 +307,7 @@ function Library.CreateLib(title, themeName)
 		Parent = Main,
 
 		Position = UDim2.fromOffset(0, 45),
-		Size = UDim2.new(0, 130, 1, -45),
+		Size = UDim2.new(0, 140, 1, -45),
 
 		BackgroundColor3 = Theme.Sidebar,
 		BorderSizePixel = 0
@@ -347,8 +347,8 @@ function Library.CreateLib(title, themeName)
 		Name = "Content",
 		Parent = Main,
 
-		Position = UDim2.fromOffset(130, 45),
-		Size = UDim2.new(1, -130, 1, -45),
+		Position = UDim2.fromOffset(140, 45),
+		Size = UDim2.new(1, -140, 1, -45),
 
 		BackgroundColor3 = Theme.Background,
 		BorderSizePixel = 0
@@ -384,6 +384,7 @@ function Library.CreateLib(title, themeName)
 		})
 
 		Corner(TabButton, 8)
+        Stroke(Frame, Theme.Border)
 
 		local Icon = Create("TextLabel", {
 			Parent = TabButton,
