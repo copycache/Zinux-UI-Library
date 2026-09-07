@@ -145,10 +145,10 @@ function Library.CreateLib(title, themeName)
 		Name = "Main",
 		Parent = ScreenGui,
 
-		Size = UDim2.fromOffset(800, 500),
+		Size = UDim2.fromOffset(730, 500),
 		Position = UDim2.new(
 			0.5,
-			-400,
+			-365,
 			0.5,
 			-250
 		),
@@ -172,7 +172,7 @@ function Library.CreateLib(title, themeName)
 		Name = "Topbar",
 		Parent = Main,
 
-		Size = UDim2.new(1, 0, 0, 58),
+		Size = UDim2.new(1, 0, 0, 45),
 
 		BackgroundColor3 = Theme.Topbar,
 		BorderSizePixel = 0
@@ -240,9 +240,9 @@ function Library.CreateLib(title, themeName)
 		minimized = not minimized
 
 		if minimized then
-			Main.Size = UDim2.fromOffset(800, 58)
+			Main.Size = UDim2.fromOffset(730, 45)
 		else
-			Main.Size = UDim2.fromOffset(800, 500)
+			Main.Size = UDim2.fromOffset(730, 500)
 		end
 	end)
 
@@ -306,8 +306,8 @@ function Library.CreateLib(title, themeName)
 		Name = "Sidebar",
 		Parent = Main,
 
-		Position = UDim2.fromOffset(0, 58),
-		Size = UDim2.new(0, 140, 1, -58),
+		Position = UDim2.fromOffset(0, 45),
+		Size = UDim2.new(0, 130, 1, -45),
 
 		BackgroundColor3 = Theme.Sidebar,
 		BorderSizePixel = 0
@@ -347,8 +347,8 @@ function Library.CreateLib(title, themeName)
 		Name = "Content",
 		Parent = Main,
 
-		Position = UDim2.fromOffset(140, 58),
-		Size = UDim2.new(1, -140, 1, -58),
+		Position = UDim2.fromOffset(130, 45),
+		Size = UDim2.new(1, -130, 1, -45),
 
 		BackgroundColor3 = Theme.Background,
 		BorderSizePixel = 0
