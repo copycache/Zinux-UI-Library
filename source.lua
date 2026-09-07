@@ -313,6 +313,8 @@ function Library.CreateLib(title, themeName)
 		BorderSizePixel = 0
 	})
 
+    Stroke(TabButton, Theme.Border)
+
 	Window.Sidebar = Sidebar
 
 	local TabList = Create("ScrollingFrame", {
@@ -384,7 +386,6 @@ function Library.CreateLib(title, themeName)
 		})
 
 		Corner(TabButton, 8)
-        Stroke(TabButton, Theme.Border)
 
 		local Icon = Create("TextLabel", {
 			Parent = TabButton,
