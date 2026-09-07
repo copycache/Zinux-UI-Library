@@ -17,8 +17,7 @@ local Themes = {
 		Text = Color3.fromRGB(235, 235, 240),
 		SubText = Color3.fromRGB(145, 146, 157),
 
-		Accent = Color3.fromRGB(120, 137, 255),
-		AccentDark = Color3.fromRGB(91, 105, 210),
+		Accent = Color3.fromRGB(24, 25, 32),
 
 		ToggleOff = Color3.fromRGB(48, 49, 58),
 		ToggleKnob = Color3.fromRGB(18, 19, 24),
@@ -40,7 +39,6 @@ local Themes = {
 		SubText = Color3.fromRGB(105, 106, 116),
 
 		Accent = Color3.fromRGB(105, 122, 235),
-		AccentDark = Color3.fromRGB(83, 99, 205),
 
 		ToggleOff = Color3.fromRGB(205, 206, 214),
 		ToggleKnob = Color3.fromRGB(255, 255, 255),
