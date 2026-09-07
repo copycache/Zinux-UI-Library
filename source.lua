@@ -389,7 +389,7 @@ function Library.CreateLib(title, themeName)
 			Parent = TabButton,
 
 			Position = UDim2.fromOffset(10, 0),
-			Size = UDim2.fromOffset(22, 38),
+			Size = UDim2.fromOffset(22, 28),
 
 			BackgroundTransparency = 1,
 
