@@ -1,8 +1,3 @@
---// Nexus-style UI Library
---// Usage:
---// local Library = require(...)
---// local Window = Library.CreateLib("Nexus Hub", "DarkTheme")
-
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -10,10 +5,6 @@ local TweenService = game:GetService("TweenService")
 local LocalPlayer = Players.LocalPlayer
 
 local Library = {}
-
---==================================================
--- THEME
---==================================================
 
 local Themes = {
 	DarkTheme = {
@@ -190,87 +181,7 @@ function Library.CreateLib(title, themeName)
 		BorderSizePixel = 0
 	})
 
-	local TitleLabel = Create("TextLabel", {
-		Name = "Title",
-		Parent = Topbar,
-
-		Position = UDim2.fromOffset(18, 8),
-		Size = UDim2.fromOffset(400, 23),
-
-		BackgroundTransparency = 1,
-
-		Text = title,
-		TextColor3 = Theme.Text,
-		TextSize = 14,
-		Font = Enum.Font.GothamBold,
-
-		TextXAlignment = Enum.TextXAlignment.Left
-	})
-
-	local Version = Create("TextLabel", {
-		Name = "Version",
-		Parent = Topbar,
-
-		Position = UDim2.fromOffset(18, 30),
-		Size = UDim2.fromOffset(400, 18),
-
-		BackgroundTransparency = 1,
-
-		Text = "Blox Fruits • v4.2.1",
-		TextColor3 = Theme.SubText,
-		TextSize = 10,
-		Font = Enum.Font.Gotham,
-
-		TextXAlignment = Enum.TextXAlignment.Left
-	})
-
-	-- Attached indicator
-
-	local Attached = Create("Frame", {
-		Name = "Attached",
-		Parent = Topbar,
-
-		AnchorPoint = Vector2.new(1, 0.5),
-		Position = UDim2.new(1, -80, 0.5, 0),
-
-		Size = UDim2.fromOffset(70, 28),
-
-		BackgroundColor3 = Theme.Card,
-		BorderSizePixel = 0
-	})
-
-	Corner(Attached, 8)
-
-	local Dot = Create("Frame", {
-		Parent = Attached,
-
-		Position = UDim2.fromOffset(10, 11),
-		Size = UDim2.fromOffset(6, 6),
-
-		BackgroundColor3 = Color3.fromRGB(65, 220, 120),
-		BorderSizePixel = 0
-	})
-
-	Corner(Dot, 10)
-
-	local AttachedText = Create("TextLabel", {
-		Parent = Attached,
-
-		Position = UDim2.fromOffset(21, 0),
-		Size = UDim2.new(1, -21, 1, 0),
-
-		BackgroundTransparency = 1,
-
-		Text = "Attached",
-		TextColor3 = Theme.SubText,
-		TextSize = 10,
-		Font = Enum.Font.GothamMedium,
-
-		TextXAlignment = Enum.TextXAlignment.Left
-	})
-
 	-- Close
-
 	local Close = Create("TextButton", {
 		Parent = Topbar,
 
