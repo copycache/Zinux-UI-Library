@@ -384,7 +384,7 @@ function Library.CreateLib(title, themeName)
 		})
 
 		Corner(TabButton, 8)
-        Stroke(Frame, Theme.Border)
+        Stroke(TabButton, Theme.Border)
 
 		local Icon = Create("TextLabel", {
 			Parent = TabButton,
