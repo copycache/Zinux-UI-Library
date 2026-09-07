@@ -354,6 +354,8 @@ function Library.CreateLib(title, themeName)
 		BorderSizePixel = 0
 	})
 
+    Stroke(Content, Theme.Border)
+
 	Window.Content = Content
 
 	--==================================================
