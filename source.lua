@@ -160,7 +160,6 @@ function Library.CreateLib(title, themeName)
 	})
 
 	Corner(Main, 16)
-	Stroke(Main, Theme.Border)
 
 	Window.Main = Main
 
@@ -177,6 +176,8 @@ function Library.CreateLib(title, themeName)
 		BackgroundColor3 = Theme.Topbar,
 		BorderSizePixel = 0
 	})
+
+    Stroke(Topbar, Theme.Border)
 
 	local TitleLabel = Create("TextLabel", {
 		Name = "Title",
@@ -312,6 +313,8 @@ function Library.CreateLib(title, themeName)
 		BackgroundColor3 = Theme.Background,
 		BorderSizePixel = 0
 	})
+
+    Stroke(Sidebar, Theme.Border)
 
 	Window.Sidebar = Sidebar
 
