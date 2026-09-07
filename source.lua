@@ -160,6 +160,7 @@ function Library.CreateLib(title, themeName)
 	})
 
 	Corner(Main, 16)
+	Stroke(Main, Theme.Border)
 
 	Window.Main = Main
 
