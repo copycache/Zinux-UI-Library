@@ -854,7 +854,7 @@ function Library.CreateLib(title, themeName)
 
 				local function SetValue(newValue)
 
-					value = math.clamp(newValue, min, max)
+					value = math.floor(math.clamp(newValue, min, max) + 0.5)
 
 					local percent = (value - min) / (max - min)
 
@@ -867,9 +867,7 @@ function Library.CreateLib(title, themeName)
 						0
 					)
 
-					ValueLabel.Text = tostring(
-						math.floor(value * 100) / 100
-					)
+					ValueLabel.Text = tostring(value)
 
 					if callback then
 						task.spawn(callback, value)
